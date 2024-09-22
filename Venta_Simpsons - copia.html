@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons Fan Center - Videojuegos, Juguetes y Ropa</title>
+    <!-- Vincular el archivo CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Vincular icono -->
+    <link rel="icon" href="IMAGENES/SIMPSONS_INDEX.PNG" type="image/png">
+</head>
+
+<body>
+
+    <!-- Encabezado con el logo y título -->
+    <header>
+        <div>
+            <img src="IMAGENES/SIMPSONS_INDEX.PNG" alt="Logo de Simpsons Fan Center" width="150">
+        </div>
+        <h1>Simpsons Fan Center</h1>
+        <p class="banner">¡Todo lo que necesitas de Los Simpsons: Videojuegos, Juguetes, Ropa y más!</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Simpsons</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compras.html">COMPRAS</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos de Los Simpsons"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="section-title">Bienvenidos a Simpsons Fan Center</div>
+        <p>Descubre los mejores videojuegos, juguetes, ropa y coleccionables de tu familia amarilla favorita. ¡No te
+            pierdas nuestras exclusivas de Los Simpsons!</p>
+
+        <div class="section-title">Productos Destacados de Los Simpsons</div>
+        <div class="product-section">
+            <div class="product-card">
+                <img src="IMAGENES/videojuego_simpsons.png" alt="Videojuego de Los Simpsons">
+                <h3>Videojuego Clásico de Los Simpsons</h3>
+                <p>Revive las aventuras de la familia Simpson con este increíble videojuego.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="IMAGENES/juguete_simpsons.png" alt="Juguete de Los Simpsons">
+                <h3>Figura de Acción de Homero Simpson</h3>
+                <p>Un juguete coleccionable exclusivo que todo fan debe tener.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="IMAGENES/ropa_simpsons.png" alt="Ropa de Los Simpsons">
+                <h3>Playera Exclusiva de Bart Simpson</h3>
+                <p>Luce genial con esta playera única de Bart Simpson. ¡Disponible por tiempo limitado!</p>
+            </div>
+        </div>
+
+        <!-- Sección de código QR -->
+        <div class="qr-section">
+            <h2>Regístrate para recibir ofertas exclusivas de Los Simpsons</h2>
+            <p>Escanea este QR para crear tu cuenta y estar al tanto de nuestras promociones temáticas:</p>
+            <img src="IMAGENES/QR_REGISTRO_SIMPOSNS.png" alt="QR para Registro">
+        </div>
+
+        <div class="qr-section">
+            <h2>Explora más productos de Los Simpsons</h2>
+            <p>Escanea este QR para visitar nuestra página completa de productos de Los Simpsons:</p>
+            <img src="IMAGENES/PAGINA_WEB_SIMPOSNS.PNG" alt="QR para la Página Web de Los Simpsons">
+        </div>
+
+        <div class="notice">
+            *El registro solo será necesario una vez para obtener acceso exclusivo a productos de Los Simpsons.
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Derechos Reservados &copy;
+            <script>document.write(new Date().getFullYear());</script> Simpsons Fan Center
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
