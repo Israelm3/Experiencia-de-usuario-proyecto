@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Artículos con Menú</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #eb8006;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #f1a752;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            background-color: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #eb8006;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página de Artículos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#articulo1">Artículo 1</a></li>
+            <li><a href="#articulo2">Artículo 2</a></li>
+            <li><a href="#articulo3">Artículo 3</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="articulo1" class="section">
+            <h2>Título del Artículo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien arcu. Nulla facilisi. Duis ac purus nec purus luctus dictum.</p>
+        </section>
+
+        <section id="articulo2" class="section">
+            <h2>Título del Artículo 2</h2>
+            <p>Curabitur vehicula libero sed turpis posuere, nec scelerisque dui efficitur. Integer euismod, mauris id consectetur egestas, libero risus vehicula ante, nec tristique risus odio id turpis.</p>
+        </section>
+
+        <section id="articulo3" class="section">
+            <h2>Título del Artículo 3</h2>
+            <p>Nam quis lacus non lacus hendrerit auctor. Morbi vel efficitur mi. Integer at orci non purus facilisis dictum. Proin quis nisi odio.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Página de Artículos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
