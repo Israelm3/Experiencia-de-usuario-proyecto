@@ -2,31 +2,234 @@
 <html lang="es">
 
 <head>
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Web</title>
+    <title>PLAY CENTER - Videojuegos y Coleccionables</title>
     <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace al archivo CSS externo -->
-    <link rel="icon" href="favicon.png" type="image/png"> <!-- Favicon del sitio -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            background-image: url('IMAGENES/FONDO_ENLACES.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #19284C;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f77022;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #28FF28;
+            color: #000;
+        }
+
+        main {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .banner {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            background-color: #252490;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .section-title {
+            color: black;
+            background-color: #252490;
+            font-size: 28px;
+            padding: 10px;
+        }
+
+        .product-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 2px solid #252490;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .qr-section {
+            margin: 40px 0;
+        }
+
+        .qr-section img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .notice {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .hero {
+            margin: 40px 0;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #444;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .btn-cta {
+            background-color: #252490;
+            color: black;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .btn-cta:hover {
+            background-color: #28FF80;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
-        <img src="imagenes/logo.png" alt="Logo del sitio" width="100">
-        <h1>Bienvenido a Mi Proyecto Web</h1>
+        <div>
+            <img src="imagenes/fondo.PNG" alt="LOGO DE PLAY CENTER" width="150">
+        </div>
+        <h1>PLAY CENTER</h1>
+        <p class="banner">¡Tu espacio para Videojuegos, Juguetes y Coleccionables!</p>
     </header>
+
+    <nav>
+        <a href="INICIO/INICIO_USUARIO.PHP">Inicio</a>
+        <a href="ACERCA.PHP">Nosotros</a>
+        <a href="NOTICIAS.PHP">Noticias</a>
+        <a href="TIENDA.PHP">Tienda</a>
+        <a href="CONTACTO.PHP">Contacto</a>
+    </nav>
 
     <main>
         <section class="hero">
             <h2>¡Los mejores videojuegos y artículos temáticos!</h2>
             <p>Explora nuestras promociones y productos destacados.</p>
+            <button class="btn-cta">Comprar ahora</button>
         </section>
 
-        <button class="btn-cta">Comprar ahora</button>
+        <div class="section-title">Bienvenidos a PLAY CENTER</div>
+        <p>Encuentra los mejores artículos de tus videojuegos favoritos, figuras de acción, juguetes temáticos y mucho
+            más. ¡No te pierdas nuestras ofertas!</p>
+
+        <div class="section-title">Productos Destacados</div>
+        <div class="product-section">
+            <div class="product-card">
+                <img src="imagenes/INDEX_JUEGOS.PNG" alt="Videojuego Popular">
+                <h3>Videojuego Épico</h3>
+                <p>Disfruta de la mejor experiencia de juego con este título aclamado por los críticos.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="imagenes/INDEX_ROPA.PNG" alt="Ropa Temático">
+                <h3>Ropa Exclusiva</h3>
+                <p>Ropa de colección imprescindible para los fans de las series y videojuegos.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="imagenes/INDEX_JUGUETES.PNG" alt="Coleccionable">
+                <h3>Coleccionable de Edición Limitada</h3>
+                <p>Solo disponible por tiempo limitado. ¡Consíguelo antes de que se agoten!</p>
+            </div>
+        </div>
+
+        <div class="qr-section">
+            <h2>Regístrate para recibir ofertas exclusivas</h2>
+            <p>Escanea este QR para crear tu cuenta:</p>
+            <img src="IMAGENES/QR_REGISTRO.png" alt="QR para Registro">
+        </div>
+
+        <div class="qr-section">
+            <h2>Visita nuestra página principal</h2>
+            <p>Escanea el siguiente QR para explorar más productos y ofertas:</p>
+            <img src="IMAGENES/PAGINA_WEB.PNG" alt="QR para la Página Web">
+        </div>
+
+        <div class="notice">
+            *El registro solo será necesario una vez para obtener tu usuario y contraseña.
+        </div>
     </main>
 
     <footer>
-        <p>Derechos Reservados &copy; 2024 Mi Proyecto Web</p>
+        <p>Derechos Reservados &copy;
+            <script>document.write(new Date().getFullYear());</script> PLAY CENTER
+        </p>
     </footer>
+
 </body>
 
 </html>
